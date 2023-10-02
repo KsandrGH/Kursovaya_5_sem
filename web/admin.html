@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Управление товарами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Стиль для кнопки "Выйти" */
+        .button-logout {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<h1><a href="index.php">Управление зачётками</a></h1>
+
+<div class="button-container">
+    <a href="create.php" class="button">Добавить зачётку</a>
+    <a href="delete.php" class="button">Удалить зачётку</a>
+    <a href="index.php" class="button">Список зачёток</a>
+    <a href="read.php" class="button">Посмотреть зачётку по id</a>
+    <a href="update.php" class="button">Обновить информацию в зачётке</a>
+    <a href="login.html" class="button button-logout">Выйти</a>
+</div>
+
+</body>
+</html>
